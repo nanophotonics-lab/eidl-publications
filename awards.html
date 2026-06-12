@@ -19,17 +19,17 @@
     body {
       font-family: Arial, sans-serif;
       background: #ffffff;
-      color: #1f2937;
-      padding: 26px 36px 40px;
+      color: #111827;
+      padding: 28px 36px 48px;
     }
 
     .wrap {
-      width: min(1400px, 96vw);
+      width: min(1500px, 96vw);
       margin: 0 auto;
     }
 
     .page-header {
-      margin-bottom: 26px;
+      margin-bottom: 30px;
     }
 
     h1 {
@@ -48,14 +48,14 @@
     }
 
     .year-section {
-      margin-top: 34px;
+      margin-top: 38px;
     }
 
     .year-title {
       display: flex;
       align-items: center;
       gap: 14px;
-      margin: 0 0 18px;
+      margin: 0 0 22px;
       font-size: 28px;
       font-weight: 800;
       color: #111827;
@@ -70,57 +70,51 @@
 
     .award-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 22px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 26px;
     }
 
     .award-card {
-      display: grid;
-      grid-template-columns: 230px 1fr;
-      gap: 20px;
       background: #ffffff;
       border: 1px solid #e5e7eb;
       border-radius: 18px;
-      padding: 18px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
-      align-items: start;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.055);
     }
 
     .award-thumb {
       width: 100%;
-      height: 170px;
-      border-radius: 14px;
+      height: 260px;
       object-fit: cover;
-      border: 1px solid #e5e7eb;
-      background: #f8fafc;
       display: block;
+      background: #f8fafc;
+      border-bottom: 1px solid #e5e7eb;
     }
 
     .award-placeholder {
       width: 100%;
-      height: 170px;
-      border-radius: 14px;
-      border: 1px solid #e5e7eb;
+      height: 260px;
       background: linear-gradient(135deg, #eef3ff, #f8fafc);
       color: #344e7a;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      font-size: 18px;
+      font-size: 22px;
       font-weight: 800;
       line-height: 1.4;
+      border-bottom: 1px solid #e5e7eb;
     }
 
     .award-body {
-      min-width: 0;
+      padding: 18px 20px 20px;
     }
 
     .meta-row {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .tag {
@@ -142,11 +136,12 @@
     }
 
     .award-title {
-      margin: 0 0 12px;
-      font-size: 26px;
+      margin: 0;
+      font-size: 21px;
       font-weight: 800;
-      line-height: 1.3;
+      line-height: 1.38;
       color: #111827;
+      letter-spacing: -0.01em;
     }
 
     .award-title a {
@@ -158,41 +153,11 @@
       text-decoration: underline;
     }
 
-    .award-summary {
-      margin: 0 0 12px;
-      font-size: 17px;
-      line-height: 1.5;
-      color: #344054;
-    }
-
-    .award-summary strong {
-      font-weight: 800;
-      color: #111827;
-    }
-
-    .award-info {
-      margin: 4px 0;
+    .award-date {
+      margin: 12px 0 0;
       font-size: 14px;
       color: #667085;
-      line-height: 1.5;
-    }
-
-    .award-info strong {
-      color: #344054;
-      font-weight: 700;
-    }
-
-    .top-link {
-      display: inline-block;
-      margin-top: 10px;
-      color: #263b63;
-      font-size: 14px;
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .top-link:hover {
-      text-decoration: underline;
+      font-weight: 600;
     }
 
     .empty {
@@ -205,13 +170,18 @@
       font-size: 14px;
     }
 
-    @media (max-width: 1100px) {
+    @media (max-width: 1200px) {
       .award-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .award-thumb,
+      .award-placeholder {
+        height: 250px;
       }
     }
 
-    @media (max-width: 760px) {
+    @media (max-width: 720px) {
       body {
         padding: 18px;
       }
@@ -228,21 +198,17 @@
         font-size: 24px;
       }
 
-      .award-card {
+      .award-grid {
         grid-template-columns: 1fr;
       }
 
       .award-thumb,
       .award-placeholder {
-        height: 220px;
+        height: 240px;
       }
 
       .award-title {
-        font-size: 22px;
-      }
-
-      .award-summary {
-        font-size: 16px;
+        font-size: 20px;
       }
     }
   </style>
@@ -302,35 +268,13 @@
       }, {});
     }
 
-    function makeSummary(a) {
-      const recipient = String(a.Recipient || "").trim();
-      const award = String(a.Award || "").trim();
-      const organization = String(a.Organization || "").trim();
-
-      if (recipient && award && organization) {
-        return `<strong>${escapeHtml(recipient)}</strong> received <strong>${escapeHtml(award)}</strong> from ${escapeHtml(organization)}.`;
-      }
-
-      if (recipient && award) {
-        return `<strong>${escapeHtml(recipient)}</strong> received <strong>${escapeHtml(award)}</strong>.`;
-      }
-
-      if (a.Description) {
-        return escapeHtml(a.Description);
-      }
-
-      return "";
-    }
-
     function awardCard(a) {
       const title = escapeHtml(a.Title);
-      const award = escapeHtml(a.Award);
       const category = escapeHtml(a.Category);
       const year = escapeHtml(a.Year);
       const date = escapeHtml(a.Date);
       const link = String(a.Link || "").trim();
       const imageUrl = String(a.Image || "").trim();
-      const summary = makeSummary(a);
 
       const image = imageUrl
         ? `<img class="award-thumb" src="${escapeHtml(imageUrl)}" alt="award image" loading="lazy" decoding="async">`
@@ -352,10 +296,7 @@
 
             <h2 class="award-title">${titleHtml}</h2>
 
-            ${summary ? `<p class="award-summary">${summary}</p>` : ""}
-            ${award ? `<p class="award-info"><strong>Award:</strong> ${award}</p>` : ""}
-            ${date ? `<p class="award-info"><strong>Date:</strong> ${date}</p>` : ""}
-            ${link ? `<a class="top-link" href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer">View details</a>` : ""}
+            ${date ? `<p class="award-date">${date}</p>` : ""}
           </div>
         </article>
       `;
