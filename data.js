@@ -929,7 +929,8 @@ window.AWARDS = [
     "Link": "",
     "Description": "Haejun received the Commendation from the Deputy Prime Minister for Science and Technology.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "haejun-chung"
   },
   {
     "Date": "2026-02",
@@ -943,7 +944,8 @@ window.AWARDS = [
     "Link": "",
     "Description": "Junho, Eunbi, Daehwan, and Jiwoong received Grand Prize from HY-BK G3 program.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "junho-moon; eunbi-jang; daehwan-kim; jiwoong-yang"
   },
   {
     "Date": "2026-01",
@@ -957,7 +959,8 @@ window.AWARDS = [
     "Link": "",
     "Description": "Eunbi and Jiwoong received Bronze Prize from BK21 IC-PBL+ Graduate Championship.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "eunbi-jang; jiwoong-yang"
   },
   {
     "Date": "2025-12",
@@ -971,7 +974,8 @@ window.AWARDS = [
     "Link": "",
     "Description": "Chanik, Hyewon, and Munseong received Excellence Award in Startup Competition.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "chanik-kang; hyewon-suk; munseong-bae"
   },
   {
     "Date": "2025-11",
@@ -985,7 +989,8 @@ window.AWARDS = [
     "Link": "",
     "Description": "EIDL team won the TTA Award of the Ministry of Science and ICT 2025 AI-Champion Contest.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "chanik-kang; hyewon-suk; junho moon; daehwan kim; jiwoong yang; yujin park; boseong kim"
   },
   {
     "Date": "2025-08",
@@ -995,11 +1000,12 @@ window.AWARDS = [
     "Award": "1st Place Award",
     "Organization": "KIEES Summer Conference",
     "Category": "Paper Award",
-    "Image": "https://drive.google.com/thumbnail?id=15BizWHNepiJIE8r0kjoC1JVKnHA9yNI3&sz=w600",
+    "Image": "https://drive.google.com/thumbnail?id=1vDVWaeyYBL5h4fTcM5fC_D6LvoJPByCN&sz=w600",
     "Link": "",
     "Description": "Eunbi, Junghee, and Chanik received 1st Place Award among 780 papers from KIEES Summer Conference.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "eunbi-jang; junghee; chanik-kang"
   },
   {
     "Date": "2025-08",
@@ -1009,11 +1015,12 @@ window.AWARDS = [
     "Award": "Award",
     "Organization": "HY-BK G3 program",
     "Category": "Prize",
-    "Image": "https://drive.google.com/thumbnail?id=1vDVWaeyYBL5h4fTcM5fC_D6LvoJPByCN&sz=w600",
+    "Image": "https://drive.google.com/thumbnail?id=10xlp_txu1uEvqoroHbGC_CINJJoqD0Ab&sz=w600",
     "Link": "",
     "Description": "Team Finale received Award from HY-BK G3 program.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "chanik-kang; munseong-bae; joonhyuk-seo; hyewon-suk"
   },
   {
     "Date": "2025-01",
@@ -1023,11 +1030,12 @@ window.AWARDS = [
     "Award": "CES 2025 Innovation Awards",
     "Organization": "CES 2025",
     "Category": "Innovation Award",
-    "Image": "https://drive.google.com/thumbnail?id=10xlp_txu1uEvqoroHbGC_CINJJoqD0Ab&sz=w600",
+    "Image": "https://drive.google.com/thumbnail?id=1P0BH1wj2ephsMMB6sbRU2bEv2WHIX-bQ&sz=w600",
     "Link": "",
     "Description": "EIDL team won two CES 2025 Innovation Awards for the ultra-compact metalens imaging system.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": ""
   },
   {
     "Date": "2024-11",
@@ -1037,11 +1045,12 @@ window.AWARDS = [
     "Award": "CES 2025 Innovation Awards",
     "Organization": "CES 2025",
     "Category": "Innovation Award",
-    "Image": "https://drive.google.com/thumbnail?id=1P0BH1wj2ephsMMB6sbRU2bEv2WHIX-bQ&sz=w600",
+    "Image": "https://drive.google.com/thumbnail?id=1P8e5P0iDqPXrinWXBKAibTeHQ0-yHDD4&sz=w600",
     "Link": "",
     "Description": "Ultra-compact metalens imaging technique was awarded two CES 2025 Innovation Awards.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": ""
   },
   {
     "Date": "2024-08",
@@ -1051,11 +1060,12 @@ window.AWARDS = [
     "Award": "Silver Prize and Bronze Prize",
     "Organization": "Corning AI Challenge",
     "Category": "Competition Award",
-    "Image": "https://drive.google.com/thumbnail?id=1P8e5P0iDqPXrinWXBKAibTeHQ0-yHDD4&sz=w600",
+    "Image": "https://drive.google.com/thumbnail?id=1P6PjiNB0cz7AVTG2pzinFB-MQD7A602q&sz=w600",
     "Link": "",
     "Description": "EIDL team received Silver Prize in 2023 and Bronze Prize in 2024 from Corning AI Challenge.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "chanik-kang; junyoung; dongjin-seo"
   },
   {
     "Date": "2024-08",
@@ -1065,11 +1075,12 @@ window.AWARDS = [
     "Award": "Silver Prize",
     "Organization": "HY-BK G3 program",
     "Category": "Prize",
-    "Image": "https://drive.google.com/thumbnail?id=1P6PjiNB0cz7AVTG2pzinFB-MQD7A602q&sz=w600",
+    "Image": "https://drive.google.com/thumbnail?id=1XeaGMpAXbTTR-7ITfkIMbtpIpsOetvzk&sz=w600",
     "Link": "",
     "Description": "Team INR received Silver Prize from HY-BK G3 program.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "chanik-kang; munseong-bae; joonhyuk-seo"
   },
   {
     "Date": "2023-12",
@@ -1079,11 +1090,12 @@ window.AWARDS = [
     "Award": "Silver Prize",
     "Organization": "AI Grand Challenge",
     "Category": "Competition Award",
-    "Image": "https://drive.google.com/thumbnail?id=1XeaGMpAXbTTR-7ITfkIMbtpIpsOetvzk&sz=w600",
+    "Image": "",
     "Link": "",
     "Description": "Team Gaia received Silver Prize from AI Grand Challenge.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "dongjin-seo; junho-moon; joonhyuk-seo"
   },
   {
     "Date": "2023-11",
@@ -1097,7 +1109,8 @@ window.AWARDS = [
     "Link": "",
     "Description": "Joonho's team received Bronze Prize from Capstone Design Fair 2023.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "joonho-kang"
   },
   {
     "Date": "2023-11",
@@ -1111,7 +1124,8 @@ window.AWARDS = [
     "Link": "",
     "Description": "Joonho's team received Bronze Prize from HY-EE Graduation Project Competition 2023.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "joonho-kang"
   },
   {
     "Date": "2023-11",
@@ -1125,7 +1139,8 @@ window.AWARDS = [
     "Link": "",
     "Description": "Joonhyuk received Paper Award from KIEES Fall 2023.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "joonhyuk-seo"
   },
   {
     "Date": "2023-11",
@@ -1139,7 +1154,8 @@ window.AWARDS = [
     "Link": "",
     "Description": "EIDL received Grand Prize from Healthy Research Lab Culture Contest.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": ""
   },
   {
     "Date": "2023-10",
@@ -1153,7 +1169,8 @@ window.AWARDS = [
     "Link": "",
     "Description": "Haejun was awarded as a Rising Star in EIRIC.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "haejun-chung"
   },
   {
     "Date": "2023-08",
@@ -1167,7 +1184,8 @@ window.AWARDS = [
     "Link": "",
     "Description": "Junjeong, Munseong, and Chanik received Grand Prize from HY-BK G3 program.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "junjeong-park; munseong-bae; chanik-kang"
   },
   {
     "Date": "2023-07",
@@ -1181,7 +1199,8 @@ window.AWARDS = [
     "Link": "",
     "Description": "JoonHyuk, Jaegang, and Haejun received Grand Prize from the 6th HY-Innovation Contest.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "joonhyuk-seo; jaegang; haejun-chung"
   },
   {
     "Date": "2023-04",
@@ -1195,7 +1214,8 @@ window.AWARDS = [
     "Link": "",
     "Description": "Jaegang received the HY-KIST Global Talented Student Award.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "jaegang"
   },
   {
     "Date": "2022-08",
@@ -1209,7 +1229,8 @@ window.AWARDS = [
     "Link": "",
     "Description": "Haejun won the ASML TECH TALK 2022 Paper Award.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "haejun-chung"
   },
   {
     "Date": "2021-11",
@@ -1223,6 +1244,7 @@ window.AWARDS = [
     "Link": "",
     "Description": "Junjeong Park won Paper Award at KIEES Fall Conference.",
     "Featured": "FALSE",
-    "Visible": "TRUE"
+    "Visible": "TRUE",
+    "MemberKeys": "junjeong-park"
   }
 ];
