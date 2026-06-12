@@ -47,6 +47,28 @@
       line-height: 1.6;
     }
 
+    .filter-note {
+      display: none;
+      margin-top: 14px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: #f2f4f7;
+      color: #475467;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .filter-note a {
+      color: #263b63;
+      font-weight: 800;
+      text-decoration: none;
+      margin-left: 8px;
+    }
+
+    .filter-note a:hover {
+      text-decoration: underline;
+    }
+
     .year-section {
       margin-top: 40px;
     }
@@ -119,15 +141,6 @@
       letter-spacing: -0.01em;
     }
 
-    .award-title a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .award-title a:hover {
-      text-decoration: underline;
-    }
-
     .award-date {
       margin: 12px 0 0;
       font-size: 14px;
@@ -182,8 +195,13 @@
 <body>
   <div class="wrap">
     <header class="page-header">
-      <h1>Awards</h1>
-      <p class="desc">Honors, prizes, and awards received by EIDL members.</p>
+      <h1 id="pageTitle">Awards</h1>
+      <p id="pageDesc" class="desc">Honors, prizes, and awards received by EIDL members.</p>
+
+      <div id="filterNote" class="filter-note">
+        Showing awards for <span id="memberNameText"></span>.
+        <a href="./awards.html">View all awards</a>
+      </div>
     </header>
 
     <div id="awardsList">Loading...</div>
@@ -192,27 +210,75 @@
   <script src="./data.js"></script>
 
   <script>
+    const params = new URLSearchParams(window.location.search);
+
+    const memberKey =
+      params.get("member") ||
+      params.get("memberKey") ||
+      params.get("key") ||
+      "";
+
+    const memberName =
+      params.get("name") ||
+      params.get("memberName") ||
+      "";
+
     let awards = window.AWARDS || [];
 
     awards = awards
       .filter(a => a.Title)
-      .filter(a => !isFalseValue(a.Visible))
-      .sort((a, b) => {
-        const dateA = String(a.Date || "");
-        const dateB = String(b.Date || "");
+      .filter(a => !isFalseValue(a.Visible));
 
-        if (dateA && dateB) {
-          return dateB.localeCompare(dateA);
-        }
+    if (memberKey) {
+      awards = awards.filter(a => hasMemberKey(a.MemberKeys, memberKey));
+      updateMemberHeader(memberKey, memberName);
+    }
 
-        return Number(b.Year || 0) - Number(a.Year || 0);
-      });
+    awards = awards.sort((a, b) => {
+      const dateA = String(a.Date || "");
+      const dateB = String(b.Date || "");
+
+      if (dateA && dateB) {
+        return dateB.localeCompare(dateA);
+      }
+
+      return Number(b.Year || 0) - Number(a.Year || 0);
+    });
 
     renderAwards();
+
+    function updateMemberHeader(key, name) {
+      const displayName = name || key;
+
+      document.getElementById("pageTitle").textContent = `Awards — ${displayName}`;
+      document.getElementById("pageDesc").textContent = "Awards and recognitions associated with this EIDL member.";
+      document.getElementById("memberNameText").textContent = displayName;
+      document.getElementById("filterNote").style.display = "inline-block";
+    }
 
     function isFalseValue(value) {
       const v = String(value || "").trim().toLowerCase();
       return v === "false" || v === "0" || v === "no" || v === "n";
+    }
+
+    function normalizeKey(value) {
+      return String(value || "")
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, "-");
+    }
+
+    function splitMemberKeys(value) {
+      return String(value || "")
+        .split(/[;,]/)
+        .map(v => normalizeKey(v))
+        .filter(Boolean);
+    }
+
+    function hasMemberKey(memberKeys, targetKey) {
+      const keys = splitMemberKeys(memberKeys);
+      const target = normalizeKey(targetKey);
+      return keys.includes(target);
     }
 
     function escapeHtml(value) {
@@ -236,23 +302,18 @@
     function awardCard(a) {
       const title = escapeHtml(a.Title);
       const date = escapeHtml(a.Date);
-      const link = String(a.Link || "").trim();
       const imageUrl = String(a.Image || "").trim();
 
       const image = imageUrl
         ? `<img class="award-thumb" src="${escapeHtml(imageUrl)}" alt="award image" loading="lazy" decoding="async">`
         : `<div class="award-placeholder">EIDL<br>AWARD</div>`;
 
-      const titleHtml = link
-        ? `<a href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer">${title}</a>`
-        : title;
-
       return `
         <article class="award-card">
           ${image}
 
           <div class="award-body">
-            <h2 class="award-title">${titleHtml}</h2>
+            <h2 class="award-title">${title}</h2>
             ${date ? `<p class="award-date">${date}</p>` : ""}
           </div>
         </article>
@@ -263,7 +324,11 @@
       const list = document.getElementById("awardsList");
 
       if (!awards.length) {
-        list.innerHTML = `<div class="empty">No awards found.</div>`;
+        const message = memberKey
+          ? "No awards found for this member."
+          : "No awards found.";
+
+        list.innerHTML = `<div class="empty">${message}</div>`;
         return;
       }
 
