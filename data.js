@@ -113,7 +113,7 @@ window.PUBLICATIONS = [
     "Authors": "[[b]]Minho Choi‡[[/b]], Changhyun Kim‡, Sunghyun Moon, Hyeon Hwang, Min-Kyo Seo, Hyang-Tag Lim, [[b]]Haejun Chung[[/b]], Hojoong Jung*, and [[b]]Hyounghan Kwon*[[/b]]",
     "Journal": "APL Photonics (2026) (IF:5.3, JCR~20%)",
     "Link": "",
-    "Image": "",
+    "Image": "https://drive.google.com/thumbnail?id=1BC0cRNzIOLdDd7OJXomShkR79T7bgJBi&sz=w600",
     "Source": "https://sites.google.com/view/eidl/publication",
     "OldCategory": "Integrated Photonics",
     "Note": "",
