@@ -15,19 +15,79 @@ window.PUBLICATIONS = [
     "MemberKeys": "chanik-kang; haejun-chung"
   },
   {
-    "No": "",
+    "No": "[57]",
     "Year": "2026",
     "Category": "Imaging & Display",
-    "Keywords": "Color Router, Inverse Design, Angle Robustness, Image Sensor, Structural Similarity",
-    "Title": "Inverse Design of Angle-Robust Color Routers by Optical Structural Similarity",
+    "Keywords": "Color Router, Inverse Design, Optical Structural Similarity, Stitching Error, Full-Sensor-Plane",
+    "Title": "Suppressing Stitching Errors in Full-Sensor-Plane Color Routers via Optical Structural Similarity",
     "Authors": "[[b]]Donghyun Kim[[/b]], [[b]]J. Han[[/b]], [[b]]S. Lee[[/b]], M. Jang, [[b]]H. Chung*[[/b]]",
-    "Journal": "ACS Photonics (Under review)",
+    "Journal": "Nanophotonics (2026) (IF:6.8, JCR~6.7% in Optics)",
     "Link": "",
     "Image": "https://drive.google.com/thumbnail?id=1MLTUfcFiExZlRvH4TnVizR-BvzyeBW3G&sz=w600",
     "Source": "https://sites.google.com/view/eidl/publication",
     "OldCategory": "Color Router / Inverse Design",
     "Note": "",
     "MemberKeys": "donghyun-kim; junseo-han; seunghyeon-lee; haejun-chung"
+  },
+  {
+    "No": "[56]",
+    "Year": "2026",
+    "Category": "Biomedical AI",
+    "Keywords": "AI, Medical Imaging, Multi-View Classification, Optimal Transport, Confidence-Aware Learning, Latent Alignment",
+    "Title": "OTCHA: Optimal Transport-driven Confidence-aware Latent Hub Alignment for Multi-View Medical Image Classification",
+    "Authors": "[[b]]J. Yang[[/b]], [[b]]H. Chung*[[/b]], [[b]]I. Jang*[[/b]]",
+    "Journal": "[MICCAI] International Conference on Medical Image Computing and Computer-Assisted Intervention (2026) (Top-tier CS Conference according to KIISE)",
+    "Link": "",
+    "Image": "",
+    "Source": "https://sites.google.com/view/eidl/publication",
+    "OldCategory": "AI / Multi-View Medical Imaging",
+    "Note": "",
+    "MemberKeys": "jiwoong-yang; haejun-chung; ikbeom-jang"
+  },
+  {
+    "No": "[55]",
+    "Year": "2026",
+    "Category": "Biomedical AI",
+    "Keywords": "AI, Medical Imaging, Segmentation, Thin Anatomical Structures, Transformer, UNETR",
+    "Title": "CSWinUNETR: Segmentation of Thin Anatomical Structures in Medical Images",
+    "Authors": "[[b]]J. Moon[[/b]], [[b]]H. Chung*[[/b]], [[b]]I. Jang*[[/b]]",
+    "Journal": "[MICCAI] International Conference on Medical Image Computing and Computer-Assisted Intervention (2026) (Top-tier CS Conference according to KIISE)",
+    "Link": "",
+    "Image": "",
+    "Source": "https://sites.google.com/view/eidl/publication",
+    "OldCategory": "AI / Medical Image Segmentation",
+    "Note": "",
+    "MemberKeys": "junho-moon; haejun-chung; ikbeom-jang"
+  },
+  {
+    "No": "[54]",
+    "Year": "2026",
+    "Category": "AI & Computational Design",
+    "Keywords": "AI, Tabular Self-Supervised Learning, Adaptive Binning, Dynamic Curriculum, Numerical Features",
+    "Title": "When, Where, and How: Adaptive Binning for Tabular Self-Supervised Learning",
+    "Authors": "[[b]]D. Kim[[/b]], [[b]]H. Chung*[[/b]], [[b]]I. Jang*[[/b]]",
+    "Journal": "[MICCAI] International Conference on Medical Image Computing and Computer-Assisted Intervention (2026) (Top-tier CS Conference according to KIISE)",
+    "Link": "",
+    "Image": "",
+    "Source": "https://sites.google.com/view/eidl/publication",
+    "OldCategory": "AI / Tabular Self-Supervised Learning",
+    "Note": "",
+    "MemberKeys": "daehwan-kim; haejun-chung; ikbeom-jang"
+  },
+  {
+    "No": "[53]",
+    "Year": "2026",
+    "Category": "AI & Computational Design",
+    "Keywords": "AI, Ranking, Human-in-the-loop, Active Ranking, Metalens Image Quality",
+    "Title": "MetaRanker: Human-in-the-loop Active Ranking for Metalens Image Quality",
+    "Authors": "[[b]]Y. Park[[/b]], [[b]]H. Chung*[[/b]], [[b]]I. Jang*[[/b]]",
+    "Journal": "[KDD] The ACM SIGKDD Conference on Knowledge Discovery and Data Mining (2026), AI for Sciences Track (Top-tier CS Conference according to KIISE)",
+    "Link": "",
+    "Image": "https://drive.google.com/thumbnail?id=1GFha3ddmm1lgtUb--pYdYlPWS1xswmMz&sz=w600",
+    "Source": "https://sites.google.com/view/eidl/publication",
+    "OldCategory": "AI / Ranking",
+    "Note": "",
+    "MemberKeys": "yujin-park; haejun-chung; ikbeom-jang"
   },
   {
     "No": "",
@@ -56,7 +116,7 @@ window.PUBLICATIONS = [
     "Image": "",
     "Source": "https://sites.google.com/view/eidl/publication",
     "OldCategory": "Integrated Photonics",
-    "Note": "Front Cover selected",
+    "Note": "",
     "MemberKeys": "minho-choi; haejun-chung; hyounghan-kwon"
   },
   {
@@ -71,7 +131,7 @@ window.PUBLICATIONS = [
     "Image": "https://drive.google.com/thumbnail?id=18CqxGaHeYXT8XvwVVHZT__NfDBRxXbWW&sz=w600",
     "Source": "https://sites.google.com/view/eidl/publication",
     "OldCategory": "AI / Ordinal Classification",
-    "Note": "Editor's pick",
+    "Note": "",
     "MemberKeys": "daehwan-kim; haejun-chung; ikbeom-jang"
   },
   {
@@ -131,7 +191,7 @@ window.PUBLICATIONS = [
     "Image": "https://drive.google.com/thumbnail?id=140jx8L40isqDLXK1toX4AR-fT63fFK8Y&sz=w600",
     "Source": "https://sites.google.com/view/eidl/publication",
     "OldCategory": "AI / Human-in-the-loop Ranking",
-    "Note": "",
+    "Note": "Best Student Paper Award",
     "MemberKeys": "yujin-park; haejun-chung; ikbeom-jang"
   },
   {
@@ -223,21 +283,6 @@ window.PUBLICATIONS = [
     "OldCategory": "AI / Ordinal Regression",
     "Note": "",
     "MemberKeys": "daehwan-kim; haejun-chung; ikbeom-jang"
-  },
-  {
-    "No": "",
-    "Year": "2026",
-    "Category": "AI & Computational Design",
-    "Keywords": "AI, Ranking, Human-in-the-loop, Metalens Image Quality",
-    "Title": "MetaRanker: Human-in-the-loop Active Ranking for Metalens Image Quality",
-    "Authors": "[[b]]Y. Park[[/b]], [[b]]H. Chung*[[/b]], [[b]]I. Jang*[[/b]]",
-    "Journal": "Under review",
-    "Link": "",
-    "Image": "https://drive.google.com/thumbnail?id=1GFha3ddmm1lgtUb--pYdYlPWS1xswmMz&sz=w600",
-    "Source": "https://sites.google.com/view/eidl/publication",
-    "OldCategory": "AI / Ranking",
-    "Note": "",
-    "MemberKeys": "yujin-park; haejun-chung; ikbeom-jang"
   },
   {
     "No": "",
